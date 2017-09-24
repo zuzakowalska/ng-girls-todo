@@ -1,0 +1,6 @@
+<input [value]='title'
+(keyup.enter)="changeTitle($event.target.value)"
+#inputElement class="todo-input">
+<button (click)='changeTitle(inputElement.value)'
+class="btn bnt-red">Save</button>
+<!-- <p>The title is: {{ title }}</p> -->
